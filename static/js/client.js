@@ -4,8 +4,8 @@
     var retrospectivePredictor = true,
         latestSGV,
         treatments,
-        padding = {top: 20, right: 10, bottom: 80, left: 10},
-        opacity = {current: 1, DAY: 1, NIGHT: 0.8},
+        padding = { top: 20, right: 10, bottom: 30, left: 10 },
+        opacity = {current: 1, DAY: 1, NIGHT: 0.5},
         now = Date.now(),
         data = [],
         dateFn = function (d) { return new Date(d.date) },
@@ -31,6 +31,8 @@
         alarmSound = 'alarm.mp3',
         urgentAlarmSound = 'alarm2.mp3';
 
+
+    var useMetricBg = true; // true means use mmol/L, false means mg/dL
 
     var useMetricBg = true; // true means use mmol/L, false means mg/dL
 
